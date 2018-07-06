@@ -5,7 +5,7 @@ This project is supposed to simulate a busy farmer's market.  There are customer
 Video showing the program running:
 https://drive.google.com/file/d/1bKpmk-f-TwO2F1Jd2gGvBZ1M2qXIrlES/view?usp=sharing
 
-The project is visually displayed by printing out the market to the console every time a change is made to the market.  The customers slowing work there way to the fruit by waiting line.  There are 6 threads running the project: 3 adding people to each respective lane and 3 allowing a customer to buy fruit from each lane.  There exists one lock that each thread is fighting over, and when a lock is given up, the lock is randomly given to another thread trying to get the lock, allowing it to perform its respective function. 
+The project is visually displayed by printing out the market to the console every time a change is made to the market.  The customers slowing work there way to the fruit by waiting line.  There are 6 threads running the project: 3 adding people to each respective lane and 3 allowing a customer to buy fruit from each lane.  There exists one lock that each thread is fighting over, and when a lock is given up, the lock is randomly given to another thread trying to get the lock.  When a lock is given to a thread, it performs its function, prints the updates market, and sleeps for a certain period before given the lock up to another thread.
 
 An example of when there is 58 fruit left:
 
